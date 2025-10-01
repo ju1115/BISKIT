@@ -81,50 +81,41 @@ Jenkins 파이프라인 (`Jenkinsfile`)이 배포 과정을 자동화합니다. 
 
 ## 스크린샷
 
-### 메인 화면
+*참고: 이미지는 임의로 할당되었으므로, 실제 내용과 맞게 수정해주세요.*
 
-![메인화면](image/image 1.png)
+### 메인 화면
+![메인화면](image/image1.png)
 
 ### 로그인 화면
-
-![로그인 화면](./image/image 2.png)
+![로그인 화면](image/image2.png)
 
 ### 대시보드 화면
-
-![대시보드 화면](./image/image 3.png)
+![대시보드 화면](image/image3.png)
 
 ### 회원가입 화면
-
-![회원가입 화면](./image/image 4.png)
+![회원가입 화면](image/image4.png)
 
 ### 팀 생성 화면
-
-![팀 생성 화면](./image/image 5.png)
+![팀 생성 화면](image/image5.png)
 
 ### 팀 페이지 화면
-
-![팀 페이지 화면](./image/image 6.png)
+![팀 페이지 화면](image/image6.png)
 
 ### AI 추천 화면
-
-![AI 추천 화면](./image/image 7.png)
+![AI 추천 화면](image/image7.png)
 
 ### 대기자 등록 화면
-
-![대기자 등록 화면1](./image/image 8.png)
-![대기자 등록 화면2](./image/image 9.png)
+![대기자 등록 화면1](image/image8.png)
+![대기자 등록 화면2](image/image9.png)
 
 ### 대기자 상세보기 모달
-
-![대기자 상세보기 모달](./image/image 10.png)
+![대기자 상세보기 모달](image/image10.png)
 
 ### 팀 상세보기 모달
-
-![팀 상세보기 모달](./image/image 11.png)
+![팀 상세보기 모달](image/image11.png)
 
 ### 알림 화면
-
-![알림 화면](./image/image 12.png)
+![알림 화면](image/image12.png)
 
 ## 기여도와 역할
 
