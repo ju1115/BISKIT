@@ -83,7 +83,7 @@ Jenkins 파이프라인 (`Jenkinsfile`)이 배포 과정을 자동화합니다. 
 
 ### 메인 화면
 
-![메인화면](./image/image 1.png)
+![메인화면](image/image 1.png)
 
 ### 로그인 화면
 
