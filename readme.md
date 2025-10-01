@@ -4,19 +4,19 @@
 
 이 저장소는 프론트엔드, 백엔드, AI 서비스로 구성된 웹 애플리케이션을 위한 모노레포입니다. 이 프로젝트는 Docker를 사용하여 완전히 컨테이너화되었습니다.
 
--   **Frontend:** React, TypeScript, [Next.js](https://nextjs.org/) 기반의 애플리케이션입니다. [Tailwind CSS](https://tailwindcss.com/)를 사용한 스타일링, [Radix UI](https://www.radix-ui.com/)를 통한 접근성 높은 컴포넌트 구현, [Zustand](https://github.com/pmndrs/zustand)를 이용한 상태 관리, 그리고 [React Query](https://tanstack.com/query/latest)를 통한 서버 상태 관리 및 캐싱을 특징으로 합니다.
+- **Frontend:** React, TypeScript, [Next.js](https://nextjs.org/) 기반의 애플리케이션입니다. [Tailwind CSS](https://tailwindcss.com/)를 사용한 스타일링, [Radix UI](https://www.radix-ui.com/)를 통한 접근성 높은 컴포넌트 구현, [Zustand](https://github.com/pmndrs/zustand)를 이용한 상태 관리, 그리고 [React Query](https://tanstack.com/query/latest)를 통한 서버 상태 관리 및 캐싱을 특징으로 합니다.
 
--   **Backend:** Java 21과 Gradle을 사용하는 [Spring Boot](https://spring.io/projects/spring-boot) 애플리케이션입니다. 비즈니스 로직, 사용자 인증, 데이터 영속성을 처리합니다. 주요 기술로는 Spring Data JPA, Spring Security (JWT 및 OAuth2 포함), Spring Web이 있습니다.
+- **Backend:** Java 21과 Gradle을 사용하는 [Spring Boot](https://spring.io/projects/spring-boot) 애플리케이션입니다. 비즈니스 로직, 사용자 인증, 데이터 영속성을 처리합니다. 주요 기술로는 Spring Data JPA, Spring Security (JWT 및 OAuth2 포함), Spring Web이 있습니다.
 
--   **AI Service:** Python 기반의 [FastAPI](https://fastapi.tiangolo.com/) 애플리케이션입니다. PyTorch, Pandas, OpenAI와 같은 라이브러리를 사용하여 머신러닝 모델을 서빙하고 AI 기반 기능을 제공합니다.
+- **AI Service:** Python 기반의 [FastAPI](https://fastapi.tiangolo.com/) 애플리케이션입니다. PyTorch, Pandas, OpenAI와 같은 라이브러리를 사용하여 머신러닝 모델을 서빙하고 AI 기반 기능을 제공합니다.
 
 ## 기술 스택
 
--   **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Radix UI, Zustand, React Query
--   **Backend:** Spring Boot, Java 21, Gradle, Spring Data JPA, Spring Security, JWT, OAuth2
--   **AI Service:** FastAPI, Python, PyTorch, Pandas, OpenAI
--   **Database & Caching:** MySQL, Redis
--   **CI/CD & Deployment:** Docker, Jenkins, Nginx
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Radix UI, Zustand, React Query
+- **Backend:** Spring Boot, Java 21, Gradle, Spring Data JPA, Spring Security, JWT, OAuth2
+- **AI Service:** FastAPI, Python, PyTorch, Pandas, OpenAI
+- **Database & Caching:** MySQL, Redis
+- **CI/CD & Deployment:** Docker, Jenkins, Nginx
 
 ## 아키텍처
 
@@ -30,13 +30,13 @@
 
 ## 주요 기능
 
--   **AI 기반 상권 및 입지 추천**: 사용자의 요구사항에 맞춰 AI가 최적의 상권, 건물, 점포 등을 추천합니다.
--   **지도 기반 시각화**: 지도 위에 추천 매물, 상권 정보 등을 시각적으로 표시하여 직관적인 정보 확인이 가능합니다.
--   **사용자 인증**: JWT와 OAuth2를 이용한 안전한 소셜 로그인 및 회원 관리 기능을 제공합니다.
--   **AI 분석 및 서베이**: AI를 활용한 사용자 맞춤형 서베이 및 데이터 분석 기능을 제공합니다.
--   **점포 및 카테고리 관리**: 다양한 카테고리별로 점포를 검색하고 관리할 수 있습니다.
--   **마이페이지**: 사용자는 자신의 프로필과 즐겨찾기 등 개인화된 정보를 관리할 수 있습니다.
--   **실시간 채팅**: 사용자 간의 실시간 소통을 위한 채팅 기능을 제공합니다.
+- **AI 기반 상권 및 입지 추천**: 사용자의 요구사항에 맞춰 AI가 최적의 상권, 건물, 점포 등을 추천합니다.
+- **지도 기반 시각화**: 지도 위에 추천 매물, 상권 정보 등을 시각적으로 표시하여 직관적인 정보 확인이 가능합니다.
+- **사용자 인증**: JWT와 OAuth2를 이용한 안전한 소셜 로그인 및 회원 관리 기능을 제공합니다.
+- **AI 분석 및 서베이**: AI를 활용한 사용자 맞춤형 서베이 및 데이터 분석 기능을 제공합니다.
+- **점포 및 카테고리 관리**: 다양한 카테고리별로 점포를 검색하고 관리할 수 있습니다.
+- **마이페이지**: 사용자는 자신의 프로필과 즐겨찾기 등 개인화된 정보를 관리할 수 있습니다.
+- **실시간 채팅**: 사용자 간의 실시간 소통을 위한 채팅 기능을 제공합니다.
 
 ## 빌드 및 실행
 
@@ -46,89 +46,112 @@
 
 Jenkins 파이프라인 (`Jenkinsfile`)이 배포 과정을 자동화합니다. `docker-compose.yml`과 `docker-compose.prod.yml`을 함께 사용하여 서비스를 빌드하고 실행합니다.
 
--   **빌드 명령어:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml build --no-cache`
--   **실행 명령어:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
--   **중지 및 정리 명령어:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml down -v`
+- **빌드 명령어:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml build --no-cache`
+- **실행 명령어:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
+- **중지 및 정리 명령어:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml down -v`
 
 ### 로컬 개발
 
 로컬 개발의 경우, 핫 리로딩과 같은 기능을 활성화하는 `docker-compose.override.yml` 파일을 사용할 수 있습니다.
 
--   **실행 명령어:** `docker-compose up --build`
--   **중지 명령어:** `docker-compose down`
+- **실행 명령어:** `docker-compose up --build`
+- **중지 명령어:** `docker-compose down`
 
 각 서비스를 개별적으로 실행할 수도 있습니다.
 
--   **Frontend:**
-    ```bash
-    cd frontend
-    yarn dev
-    ```
+- **Frontend:**
 
--   **Backend:**
-    ```bash
-    cd backend
-    ./gradlew bootRun
-    ```
+  ```bash
+  cd frontend
+  yarn dev
+  ```
 
--   **AI Service:**
-    ```bash
-    cd ai
-    uvicorn app.main:app --reload
-    ```
+- **Backend:**
+
+  ```bash
+  cd backend
+  ./gradlew bootRun
+  ```
+
+- **AI Service:**
+  ```bash
+  cd ai
+  uvicorn app.main:app --reload
+  ```
 
 ## 스크린샷
 
-*참고: 이미지는 임의로 할당되었으므로, 실제 내용과 맞게 수정해주세요.*
-
 ### 메인 화면
+
 ![메인화면](./image/image 1.png)
 
 ### 로그인 화면
+
 ![로그인 화면](./image/image 2.png)
 
 ### 대시보드 화면
+
 ![대시보드 화면](./image/image 3.png)
 
 ### 회원가입 화면
+
 ![회원가입 화면](./image/image 4.png)
 
 ### 팀 생성 화면
+
 ![팀 생성 화면](./image/image 5.png)
 
 ### 팀 페이지 화면
+
 ![팀 페이지 화면](./image/image 6.png)
 
 ### AI 추천 화면
+
 ![AI 추천 화면](./image/image 7.png)
 
 ### 대기자 등록 화면
+
 ![대기자 등록 화면1](./image/image 8.png)
 ![대기자 등록 화면2](./image/image 9.png)
 
 ### 대기자 상세보기 모달
+
 ![대기자 상세보기 모달](./image/image 10.png)
 
 ### 팀 상세보기 모달
+
 ![팀 상세보기 모달](./image/image 11.png)
 
 ### 알림 화면
+
 ![알림 화면](./image/image 12.png)
 
 ## 기여도와 역할
 
-*이 섹션은 실제 팀원들의 역할과 기여도로 채워주세요.*
+**성기원**: 팀장, 백엔드
 
-**이도준**: 팀장, 백엔드 및 인프라
+- 백엔드 추천 도메인 개발
 
-- 인프라 및 백엔드 개발 담당
+**강 건**: 팀원, 풀스택
 
-**장효빈**: 팀원, 풀스택
+- 주요 화면 개발 상가 검색 로직 개발
 
-- 소셜 로그인, 백엔드 유저 도메인 개발, 프론트엔드 API 매핑
+**김승민**: 팀원, 백엔드
+
+- oauth2 채팅 기능 개발
+
+**이승주**: 팀원, 프론트 인프라
+
+- 로그인 추천화면 개발, 인프라 구축
+
+**강한설**: 팀원, ai
+
+- GNN 추천, SHARP 설명 모델 개발
+
+**문종원**: 팀원, ai
+
+- GNN 추천
 
 ## 배운 점
 
-*이 섹션은 프로젝트를 진행하며 팀이 얻은 실제 경험과 배운 점으로 채워주세요.*
-
-생각보다 Git에서 문제가 많이 발생했다. 잘못된 사용으로 인해 코드가 유실되는 사고가 몇 차례 일어나 개발시간을 낭비했다. 다음 프로젝트에서는 Approve를 적극적으로 사용해야겠다. 또한 백엔드 개발자일지라도 인프라에 대해 이해가 필요함을 느꼈다.
+인프라를 담당하며 인프라에 더 많은 요소가 존재함을 알았다. api호출의 성능을 검사하는 툴이라거나 CI에 코드검증을 진행하는 플러그인 또는 코드리뷰와 같은 추가 기능이 존재함을 알았다. 추가적인 학습과 컴포넌트 구조에대한 아키텍처 공부도 필요해 보인다.
